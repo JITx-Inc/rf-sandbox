@@ -1,0 +1,9 @@
+include? ".slm/stanza.proj"
+pkg-cache: ".slm/pkg-cache"
+
+package main defined-in "main.stanza"
+package helpers defined-in "helpers.stanza"
+
+packages rf-sandbox/* defined-in "src/"
+package components/CMD291P4 defined-in "src\\components\\CMD291P4.stanza"
+package components/ADAR3000 defined-in "src\\components\\ADAR3000.stanza"

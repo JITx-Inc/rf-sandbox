@@ -1,0 +1,3221 @@
+{
+	"proj-name":	"starting",
+	"headers":	[{
+			"field":	"status",
+			"name":	"Status",
+			"width":	10
+		}, {
+			"field":	"_quantity",
+			"name":	"Qty",
+			"width":	5
+		}, {
+			"field":	"insts",
+			"name":	"References",
+			"width":	10
+		}, {
+			"field":	"mpn",
+			"name":	"MPN",
+			"width":	10
+		}, {
+			"field":	"manufacturer",
+			"name":	"Manufacturer",
+			"width":	10
+		}, {
+			"field":	"description",
+			"name":	"Description",
+			"width":	20
+		}, {
+			"field":	"vendor",
+			"name":	"Supplier",
+			"width":	10
+		}, {
+			"field":	"sku",
+			"name":	"SKU",
+			"width":	10
+		}, {
+			"field":	"datasheet",
+			"name":	"Datasheet",
+			"width":	10
+		}, {
+			"field":	"_preferred",
+			"name":	"Preferred",
+			"width":	5
+		}],
+	"new_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"Inductor, 1.0uH, 0.039 Ω DC",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"pwr"
+								},
+								"field":	{
+									"name":	"DCDC-3v3"
+								}
+							},
+							"field":	{
+								"name":	"L"
+							}
+						},
+						"ref":	"L1",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\power-systems\\src\\DC-DC\\buck.stanza",
+							"line":	117,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404081011_Coilcraft-XFL3012-102MEC_C3911750.pdf",
+				"manufacturer":	"Coilcraft",
+				"mpn":	"XFL3012-102MEC",
+				"vendor":	"LCSC",
+				"sku":	"XFL3012-102MEC",
+				"price":	0.7779,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 100pF X7R ±10% 0201  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C46",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C43",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C40",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C37",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C34",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C31",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C28",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C25",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C22",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C19",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C16",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C13",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C10",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2008131833_YAGEO-CC0201KRX7R9BB101_C576696.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"CC0201KRX7R9BB101",
+				"vendor":	"Arrow",
+				"sku":	"CC0201KRX7R9BB101",
+				"price":	0.0023,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	50,
+					"capacitance":	1e-10,
+					"category":	"capacitor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"±1% 0Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"pull"
+							}
+						},
+						"ref":	"R1",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	119,
+							"column":	6
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208231730_VO-SCR0402F0R_C5140078.pdf",
+				"manufacturer":	"VO",
+				"mpn":	"SCR0402F0R",
+				"vendor":	"JLCPCB",
+				"sku":	"SCR0402F0R",
+				"price":	0.000414286,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	0,
+					"category":	"resistor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 22uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C51",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309061403_Samsung-Electro-Mechanics-CL05A226MQ5QUNC_C105226.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A226MQ5QUNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A226MQ5QUNC",
+				"price":	0.1344,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	1.0197,
+					"capacitance":	2.2e-05,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"16V 330nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C48",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C45",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C42",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C39",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C36",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C33",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C30",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C27",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C24",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C21",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C18",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C15",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C12",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C9",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B334KO8NNNC_C159798.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL10B334KO8NNNC",
+				"vendor":	"Arrow",
+				"sku":	"CL10B334KO8NNNC",
+				"price":	0.004,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	16,
+					"capacitance":	3.3e-07,
+					"category":	"capacitor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±25ppm/℃ ±0.1% 4.12kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	40,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-RP73PF1E4K12BTDF_C2145825.pdf",
+				"manufacturer":	"TE CONNECTIVITY",
+				"mpn":	"RP73PF1E4K12BTDF",
+				"vendor":	"Arrow",
+				"sku":	"RP73PF1E4K12BTDF",
+				"price":	0.0878,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	4120,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 10uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"pwr"
+								},
+								"field":	{
+									"name":	"DCDC-3v3"
+								}
+							},
+							"field":	{
+								"name":	"cin-circ"
+							}
+						},
+						"ref":	"C49",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A106MQ5NUNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A106MQ5NUNC",
+				"price":	0.027,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	1.53,
+					"capacitance":	1e-05,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 1nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C47",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C44",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C41",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C38",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C35",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C32",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C29",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C26",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C23",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C20",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C17",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C14",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C11",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C8",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407081117_YAGEO-CC0402KRX5R9BB102_C576728.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"CC0402KRX5R9BB102",
+				"vendor":	"Arrow",
+				"sku":	"CC0402KRX5R9BB102",
+				"price":	0.0046,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	50,
+					"capacitance":	1e-09,
+					"category":	"capacitor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 4.7nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C50",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211282000_Taiyo-Yuden-UMK105B7472MV-F_C2183859.pdf",
+				"manufacturer":	"Taiyo Yuden  Inc",
+				"mpn":	"UMK105B7472MV-F",
+				"vendor":	"Arrow",
+				"sku":	"UMK105B7472MV-F",
+				"price":	0.016,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	1.0197,
+					"capacitance":	4.7e-09,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±25ppm/℃ ±0.1% 26.1kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	39,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0402BRD0726K1L_C728557.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RT0402BRD0726K1L",
+				"vendor":	"Arrow",
+				"sku":	"RT0402BRD0726K1L",
+				"price":	0.1484,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	26100,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"16-24 GHz Driver Amplifier",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U4",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U3",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U2",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}],
+				"datasheet":	"URL TO DATASHEET",
+				"manufacturer":	"Qorvo",
+				"mpn":	"CMD291P4",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"SW"
+							}
+						},
+						"ref":	"U5",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	104,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.ti.com/lit/ds/symlink/tps62080.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"TPS62082DSG",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"TERM BLK 3P TOP ENTRY 3.5MM PCB",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"pwr"
+							},
+							"field":	{
+								"name":	"terminal-block"
+							}
+						},
+						"ref":	"J1",
+						"fileinfo":	{
+							"filename":	"j:\\\\\\\\JITX\\\\\\\\rf_sandbox\\\\\\\\main.stanza",
+							"line":	18,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://catalog.weidmueller.com/procat/Group.jsp;jsessionid=2D3E17129178EB5048158C0C39D6D6A1?groupId=(%22group21472460020482%22)&page=Group",
+				"manufacturer":	"Weidmüller",
+				"mpn":	"1825650000",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"PART, DESCRIPTION, DETAILED",
+				"insts":	[{
+						"inst":	{
+							"name":	"adar"
+						},
+						"ref":	"DONTUSE1",
+						"fileinfo":	{
+							"filename":	"j:\\\\\\\\JITX\\\\\\\\rf_sandbox\\\\\\\\main.stanza",
+							"line":	46,
+							"column":	2
+						}
+					}],
+				"datasheet":	"URL TO DATASHEET",
+				"manufacturer":	"MANUFACTURER NAME",
+				"mpn":	"MANUFACTURER PART NUMBER",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch4-vias"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V3",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch3-vias"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V1",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch3-vias"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V2",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch4-vias"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V4",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	},
+	"metrics":	[{
+			"name":	"Line Items",
+			"value":	18
+		}, {
+			"name":	"Components",
+			"value":	66
+		}, {
+			"name":	"Cost",
+			"value":	"$1.37"
+		}],
+	"is_update":	false,
+	"old_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"Inductor, 1.0uH, 0.039 Ω DC",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"pwr"
+								},
+								"field":	{
+									"name":	"DCDC-3v3"
+								}
+							},
+							"field":	{
+								"name":	"L"
+							}
+						},
+						"ref":	"L1",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\power-systems\\src\\DC-DC\\buck.stanza",
+							"line":	117,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404081011_Coilcraft-XFL3012-102MEC_C3911750.pdf",
+				"manufacturer":	"Coilcraft",
+				"mpn":	"XFL3012-102MEC",
+				"vendor":	"LCSC",
+				"sku":	"XFL3012-102MEC",
+				"price":	0.7779,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 100pF X7R ±10% 0201  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C46",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C43",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C40",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C37",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C34",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C31",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C28",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C25",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C22",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C19",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C16",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C13",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C10",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2008131833_YAGEO-CC0201KRX7R9BB101_C576696.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"CC0201KRX7R9BB101",
+				"vendor":	"Arrow",
+				"sku":	"CC0201KRX7R9BB101",
+				"price":	0.0023,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	50,
+					"capacitance":	1e-10,
+					"category":	"capacitor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"±1% 0Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"pull"
+							}
+						},
+						"ref":	"R1",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	119,
+							"column":	6
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208231730_VO-SCR0402F0R_C5140078.pdf",
+				"manufacturer":	"VO",
+				"mpn":	"SCR0402F0R",
+				"vendor":	"JLCPCB",
+				"sku":	"SCR0402F0R",
+				"price":	0.000414286,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	0,
+					"category":	"resistor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 22uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C51",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309061403_Samsung-Electro-Mechanics-CL05A226MQ5QUNC_C105226.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A226MQ5QUNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A226MQ5QUNC",
+				"price":	0.1344,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	1.0197,
+					"capacitance":	2.2e-05,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"16V 330nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C48",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C45",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C42",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C39",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C36",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C33",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C30",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C27",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C24",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C21",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C18",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C15",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C12",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C9",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B334KO8NNNC_C159798.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL10B334KO8NNNC",
+				"vendor":	"Arrow",
+				"sku":	"CL10B334KO8NNNC",
+				"price":	0.004,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	16,
+					"capacitance":	3.3e-07,
+					"category":	"capacitor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±25ppm/℃ ±0.1% 4.12kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	40,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-RP73PF1E4K12BTDF_C2145825.pdf",
+				"manufacturer":	"TE CONNECTIVITY",
+				"mpn":	"RP73PF1E4K12BTDF",
+				"vendor":	"Arrow",
+				"sku":	"RP73PF1E4K12BTDF",
+				"price":	0.0878,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	4120,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 10uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"pwr"
+								},
+								"field":	{
+									"name":	"DCDC-3v3"
+								}
+							},
+							"field":	{
+								"name":	"cin-circ"
+							}
+						},
+						"ref":	"C49",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A106MQ5NUNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A106MQ5NUNC",
+				"price":	0.027,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	1.53,
+					"capacitance":	1e-05,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 1nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C47",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C44",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C41",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C38",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C35",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C32",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C29",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C26",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C23",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C20",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C17",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C14",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C11",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C8",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407081117_YAGEO-CC0402KRX5R9BB102_C576728.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"CC0402KRX5R9BB102",
+				"vendor":	"Arrow",
+				"sku":	"CC0402KRX5R9BB102",
+				"price":	0.0046,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	50,
+					"capacitance":	1e-09,
+					"category":	"capacitor",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 4.7nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C50",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211282000_Taiyo-Yuden-UMK105B7472MV-F_C2183859.pdf",
+				"manufacturer":	"Taiyo Yuden  Inc",
+				"mpn":	"UMK105B7472MV-F",
+				"vendor":	"Arrow",
+				"sku":	"UMK105B7472MV-F",
+				"price":	0.016,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	1.0197,
+					"capacitance":	4.7e-09,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±25ppm/℃ ±0.1% 26.1kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	39,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0402BRD0726K1L_C728557.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RT0402BRD0726K1L",
+				"vendor":	"Arrow",
+				"sku":	"RT0402BRD0726K1L",
+				"price":	0.1484,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	26100,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"16-24 GHz Driver Amplifier",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	3
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U4",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	2
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U3",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U2",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"src\\components\\CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}],
+				"datasheet":	"URL TO DATASHEET",
+				"manufacturer":	"Qorvo",
+				"mpn":	"CMD291P4",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"pwr"
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"SW"
+							}
+						},
+						"ref":	"U5",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	104,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.ti.com/lit/ds/symlink/tps62080.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"TPS62082DSG",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"TERM BLK 3P TOP ENTRY 3.5MM PCB",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"pwr"
+							},
+							"field":	{
+								"name":	"terminal-block"
+							}
+						},
+						"ref":	"J1",
+						"fileinfo":	{
+							"filename":	"j:\\\\\\\\JITX\\\\\\\\rf_sandbox\\\\\\\\main.stanza",
+							"line":	18,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://catalog.weidmueller.com/procat/Group.jsp;jsessionid=2D3E17129178EB5048158C0C39D6D6A1?groupId=(%22group21472460020482%22)&page=Group",
+				"manufacturer":	"Weidmüller",
+				"mpn":	"1825650000",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"PART, DESCRIPTION, DETAILED",
+				"insts":	[{
+						"inst":	{
+							"name":	"adar"
+						},
+						"ref":	"DONTUSE1",
+						"fileinfo":	{
+							"filename":	"j:\\\\\\\\JITX\\\\\\\\rf_sandbox\\\\\\\\main.stanza",
+							"line":	46,
+							"column":	2
+						}
+					}],
+				"datasheet":	"URL TO DATASHEET",
+				"manufacturer":	"MANUFACTURER NAME",
+				"mpn":	"MANUFACTURER PART NUMBER",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch4-vias"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V3",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch3-vias"
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V1",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch3-vias"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V2",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ch4-vias"
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"via-pin"
+							}
+						},
+						"ref":	"V4",
+						"fileinfo":	{
+							"filename":	"J:\\JITX\\rf_sandbox\\.slm\\deps\\jsl\\src\\via-structures.stanza",
+							"line":	431,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	}
+}

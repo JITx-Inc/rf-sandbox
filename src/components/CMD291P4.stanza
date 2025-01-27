@@ -1,0 +1,88 @@
+; When renaming the stanza package name below, also rename it in the folder stanza.proj
+; See docs.jitx.com for help
+#use-added-syntax(jitx)
+defpackage components/CMD291P4:
+  import core
+  import jitx
+  import jitx/commands
+  import jitx/parts
+
+  import jsl
+
+public pcb-component component :
+  name = "CMD291P4"
+  description = "16-24 GHz Driver Amplifier"
+  mpn = "CMD291P4"
+  manufacturer = "Qorvo"
+  datasheet = "URL TO DATASHEET"
+  reference-prefix = "U"
+
+  pin-properties :
+    [pin:Ref      | pads:Int ...          | side:Dir ]
+    [RF_IN        | 3                     | Left     ]
+    [RF_OUT       | 16                    | Right    ]
+    [VGG          | 9                     | Right      ]
+    [VDD[1]         | 23                    | Up   ]
+    [VDD[2]         | 21                    | Up   ]
+    [VDD[3]         | 19                    | Up   ]
+    [GND          | 2, 4, 15, 17, 25  | Down   ]
+    [NC           | 1, 5, 6, 7, 8, 10, 11, 12, 13, 14, 18, 20, 22, 24 | Down ]
+
+  val box = BoxSymbol(self)
+  val symb = create-symbol(box)
+  assign-symbol(symb)
+
+  val pkg = QFN(
+    num-leads = 24,
+    lead-profile = QFN-Lead-Profile(
+      span = 4.0 +/- 0.15,
+      pitch = 0.5,
+      lead-length = 0.4 +/- 0.15,
+      lead-width = 0.25 +/- 0.05
+    ),
+    thermal-lead? = ThermalPad(Rectangle(2.45, 2.45), padding = 0.25),
+    package-body = PackageBody(
+      width = 4.0 +/- 0.15,
+      length = 4.0 +/- 0.15,
+      height = 0.9 +/- 0.1
+    ),
+    density-level = DensityLevelC
+  )
+
+  val lp = create-landpattern(pkg)
+  assign-landpattern(lp)
+
+public pcb-module module :
+  port rf-in
+  port rf-out
+  port vgg
+  port power : power
+
+  inst da : components/CMD291P4/component
+
+  val bypass = [create-capacitor(capacitance = 0.1e-9, rated-voltage = AtLeast(50.0))
+                create-capacitor(capacitance = 1.0e-9, rated-voltage = AtLeast(50.0))
+                create-capacitor(capacitance = 330.0e-9, rated-voltage = AtLeast(16.0))]
+
+  for p in [da.VDD[1] da.VDD[2] da.VDD[3] da.VGG]:
+    ; Make a function for this cap chaining.
+    inst nf-01 : bypass[0]
+    net (nf-01.p[1] p)
+    short-trace(nf-01.p[1] p)
+    net (nf-01.p[2] da.GND)
+    inst nf-1 : bypass[1]
+    net (nf-1.p[1] p)
+    short-trace(nf-1.p[1] nf-01.p[1])
+    net (nf-1.p[2] da.GND)
+    inst nf-330 : bypass[2]
+    net (nf-330.p[1] p)
+    short-trace(nf-330.p[1] nf-1.p[1])
+    net (nf-330.p[2] da.GND)
+
+  net (da.GND da.NC power.V-)
+  net (da.VDD[1] da.VDD[2] da.VDD[3] power.V+)
+  net (da.VGG vgg)
+  topo-net(da.RF_IN rf-in)
+  topo-net(da.RF_OUT rf-out)
+
+

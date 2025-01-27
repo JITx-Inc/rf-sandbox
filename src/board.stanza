@@ -1,0 +1,200 @@
+; ====================
+; Setup the board information
+; ====================
+#use-added-syntax(jitx)
+defpackage rf-sandbox/board :
+  import core
+  import math
+  import jitx
+  import jitx/commands
+  import jitx/parts
+  import jsl
+  import helpers
+
+defn mil-to-mm (d:Double) :
+ d * 0.0254
+
+defn calc-via-delay (l1:Int, l2:Int) -> PinModel :
+  ; some global board parameters
+  val signal-delay-per-mm = 6.2e-12
+  val board-thickness = mil-to-mm(165.03)
+  val num-layers = 38.0
+  val layer-diff = to-double(abs(l1 - l2))
+  val delay = typ(layer-diff / num-layers * signal-delay-per-mm * board-thickness)
+  PinModel(delay, typ(0.100))
+
+defn setup-via-delays (l1s:Int, l1e:Int, l2e:Int) :
+  inside pcb-via :
+    for (l1 in l1s to l1e) :
+      for (l2 in l1 to l2e) :
+        if l1 != l2 :
+          structure-model(LayerIndex(l1), LayerIndex(l2)) = calc-via-delay(l1, l2)
+
+public pcb-rules rf-rules :
+  ;copper rules
+  min-copper-width = mil-to-mm(3.0)
+  min-copper-copper-space = mil-to-mm(3.0) ; 0.1397 on L1/L38
+  min-copper-hole-space = mil-to-mm(8.0) ; Minimum Clearance -> "Via to Track"  
+  min-copper-edge-space = mil-to-mm(20.0) ;  copper to edge of board
+  ;soldermask rules
+  solder-mask-registration = 0.05 ; => soldermask expansion
+  min-soldermask-opening = 0.0 ; None Listed
+  min-soldermask-bridge = 0.08 ; Solder Mask -> Min. Solder Bridge
+  ;silkscreen rules
+  min-silkscreen-width = 0.153
+  min-silk-solder-mask-space = 0.15  ; => "Pad to silkscreen"
+  min-silkscreen-text-height = 1.0  ; => "Minimum text height"
+  ;via rules
+  min-annular-ring = mil-to-mm(11.0) ; Minimum annular ring
+
+public pcb-via via-th :
+  name = "Default TH"
+  start = LayerIndex(0, Top)
+  stop = LayerIndex(0, Bottom)
+  hole-diameter = mil-to-mm(9.8)
+  diameter = mil-to-mm(18.0)
+  via-in-pad = false
+  type = MechanicalDrill
+  setup-via-delays(0, 8, 8)
+
+public pcb-via uvia-Top-1 :
+  name = "uVia-top-1"
+  start = LayerIndex(0, Top)
+  stop = LayerIndex(1, Top)
+  hole-diameter = 0.1
+  diameter = 0.2
+  via-in-pad = true
+  type = LaserDrill
+  structure-model(LayerIndex(0, Top), LayerIndex(1, Top)) = calc-via-delay(0, 1)
+
+public pcb-via uvia-1-2 :
+  name = "uVia-1-2"
+  start = LayerIndex(1, Top)
+  stop = LayerIndex(2, Top)
+  hole-diameter = 0.1
+  diameter = 0.2
+  via-in-pad = false
+  type = LaserDrill
+  structure-model(LayerIndex(1, Top), LayerIndex(2, Top)) = calc-via-delay(1, 2)
+
+public pcb-board rf-board (outline:Shape) :
+
+  val ASTRA-MT77 = DielectricMaterial(
+    name = "ASTRA-MT77"
+    description = "ASTRA-MT77 by Isola"
+    dielectric-coefficient = 3.00 ; @ 1GHz
+    loss-tangent = 0.0017 ; @ 1GHz
+    )
+
+  val PCL-370HR = DielectricMaterial(
+    name = "PCL-370HR"
+    description = "PCL-370HR"
+    dielectric-coefficient = 4.04 ; @ 1GHz
+    loss-tangent = 0.021 ; @ 1GHz
+    )
+
+  val copper_50um = Copper(0.050) ; 2.00 mils
+  val copper_15p2um = Copper(0.0152) ; 0.60 mils
+
+  val pcb_stackup = make-layer-stack("RF 8-layer Stackup", all_layers, soldermask = soldermask) where :
+    val soldermask = Soldermask(0.019, SoldermaskMaterial)
+    val prepreg_1078_74 = FR4(0.097536, ASTRA-MT77, name = "ASTRA-MT77 Prepreg 1078(74)")
+    val prepreg_106_76 = FR4(0.116838, PCL-370HR, name = "PCL-370HR Prepreg 106(76)")
+    val core_2_5mil = FR4(0.0635,  ASTRA-MT77, name = "ASTRA-MT77 Core 2.5 mil H/H")
+
+    val all_layers = [
+      [copper_50um   prepreg_1078_74], ;  L1
+      [copper_15p2um core_2_5mil],   ;  L2
+      [copper_15p2um prepreg_1078_74], ;  L3
+      [copper_15p2um core_2_5mil],     ;  L4
+      [prepreg_106_76 prepreg_106_76]  ; inner core like layer set
+    ]
+
+  stackup = create-pcb-stackup(pcb_stackup)
+  boundary = outline
+  signal-boundary = outline ; - 20 mils
+  vias = [via-th, uvia-Top-1 uvia-1-2]
+
+; velocity of strip line on layer 3 with dielectrics above and below with Er of 3.0
+; 11.8 in/ns * 40 mm/in * 1e9 ns/s / sqrt(3.0)
+val sig-v-l3 = 11.8 * 40.0 * 1.0e9 / sqrt(3.0)
+
+
+val diff-nd = DifferentialNeckDown(mil-to-mm(3.5), mil-to-mm(3.0), mil-to-mm(3.5), 0.008, sig-v-l3)
+
+defn RF-nd () -> NeckDown :   
+  NeckDown(mil-to-mm(3.0), mil-to-mm(5.0), 0.008, sig-v-l3)
+
+public pcb-differential-routing-structure diff-100 :
+  name = "Differential Impedance - 100 Ohms"
+
+  layer-constraints(LayerIndex(3, Top)) :
+    trace-width  = mil-to-mm(3.25) ; mm
+    pair-spacing = mil-to-mm(8.25) ; mm
+    clearance    = 0.300    ; mm
+    velocity = sig-v-l3      ; mm/s
+    insertion-loss = 0.1  ; db/mm @ 5GHz
+    neck-down = diff-nd
+
+public pcb-routing-structure se-RF :
+  name = "Single-Ended DQ specific 50 Ohm"
+
+  layer-constraints(LayerIndex(0, Top)) :
+    trace-width = mil-to-mm(3.25) ; mils
+    clearance = mil-to-mm(3.0)
+    velocity = sig-v-l3   ; mm/s
+    insertion-loss = 0.2  ; db/mm @ 5GHz
+    neck-down = RF-nd() 
+
+  layer-constraints(LayerIndex(1, Top)) :
+    trace-width = mil-to-mm(3.25) ; mils
+    clearance = mil-to-mm(3.0)
+    velocity = sig-v-l3   ; mm/s
+    insertion-loss = 0.3  ; db/mm @ 5GHz
+    neck-down = RF-nd() 
+
+  layer-constraints(LayerIndex(1, Bottom)) :
+    trace-width = mil-to-mm(3.25) ; mils
+    clearance = mil-to-mm(5.0)
+    velocity = sig-v-l3   ; mm/s
+    insertion-loss = 0.1  ; db/mm @ 5GHz
+    neck-down = RF-nd() 
+
+  layer-constraints(LayerIndex(0, Bottom)) :
+    trace-width = mil-to-mm(3.25) ; mils
+    clearance = mil-to-mm(5.0)
+    velocity = sig-v-l3   ; mm/s
+    insertion-loss = 0.1  ; db/mm @ 5GHz
+    neck-down = RF-nd() 
+
+; Via structures
+
+public defn se-via-cage () : 
+  inside pcb-module:
+    val se-via = SingleViaStructure(
+        name = "SE-1",
+        via-def = uvia-Top-1
+        )
+
+    val gc = PolarViaGroundCage(
+        via-def = uvia-Top-1,
+        count = 12,
+        radius = 0.5,
+        skips = [0, 2, 4, 6, 8, 10]
+        )
+    val gc2 = PolarViaGroundCage(
+        via-def = uvia-1-2,
+        count = 12,
+        radius = 0.5,
+        skips = [0, 1, 3, 5, 7, 9, 11]
+        )
+    add-ground-cage(se-via, gc)
+    add-ground-cage(se-via, gc2)
+    add-anti-pad(
+        se-via,
+        SimpleAntiPad(
+        shape = DoubleChippedCircle(radius = 0.3, edge-dist = 0.25)
+        start = LayerIndex(0, Top),
+        end = LayerIndex(1, Top))
+        )
+    create-via-structure(se-via)
