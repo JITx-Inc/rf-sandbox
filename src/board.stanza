@@ -136,6 +136,21 @@ public pcb-differential-routing-structure diff-100 :
     insertion-loss = 0.1  ; db/mm @ 5GHz
     neck-down = diff-nd
 
+public pcb-routing-structure se-RF-skup :
+  name = "Single-Ended DQ specific 50 Ohm"
+
+  layer-constraints(LayerIndex(0, Top)) :
+    trace-width = mil-to-mm(6.0) ; mils
+    clearance = mil-to-mm(3.0)
+    velocity = sig-v-l3   ; mm/s
+    insertion-loss = 0.2  ; db/mm @ 5GHz
+    neck-down = RF-nd() 
+    add-geometry :
+      layer(ForbidCopper(LayerIndex(0), LayerIndex(1))) :
+        desired-width = 0.5
+      layer(SolderMask(Top)) :
+        desired-width = 1.0
+
 public pcb-routing-structure se-RF :
   name = "Single-Ended DQ specific 50 Ohm"
 
