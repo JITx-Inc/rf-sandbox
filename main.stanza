@@ -42,7 +42,7 @@ pcb-module power-management :
 
 ; Module to run as a design
 pcb-module my-design :
-  inst da :  components/CMD291P4/module[4]
+  inst da :  components/CMD291P4/module[5]
   inst adar : components/ADAR3000/component
   inst pwr : power-management
 

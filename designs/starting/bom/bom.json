@@ -110,7 +110,7 @@
 				"mpn":	"CL05A226MQ5QUNC",
 				"vendor":	"Arrow",
 				"sku":	"CL05A226MQ5QUNC",
-				"price":	0.1344,
+				"price":	0.1179,
 				"preferred":	false,
 				"query_properties":	{
 					"min-rated-voltage":	1.0197,
@@ -132,6 +132,78 @@
 				},
 				"description":	"16V 330nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C63",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C60",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C57",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-330"
+							}
+						},
+						"ref":	"C54",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	77,
+							"column":	4
+						}
+					}, {
 						"inst":	{
 							"ref":	{
 								"ref":	{
@@ -496,6 +568,78 @@
 								"ref":	{
 									"name":	"da"
 								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C61",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C58",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C55",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-01"
+							}
+						},
+						"ref":	"C52",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	69,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
 								"index":	3
 							},
 							"field":	{
@@ -821,7 +965,7 @@
 				"mpn":	"CL05A106MQ5NUNC",
 				"vendor":	"Arrow",
 				"sku":	"CL05A106MQ5NUNC",
-				"price":	0.027,
+				"price":	0.0348,
 				"preferred":	false,
 				"query_properties":	{
 					"min-rated-voltage":	1.53,
@@ -987,6 +1131,78 @@
 				},
 				"description":	"50V 1nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C62",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C59",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C56",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"nf-1"
+							}
+						},
+						"ref":	"C53",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	73,
+							"column":	4
+						}
+					}, {
 						"inst":	{
 							"ref":	{
 								"ref":	{
@@ -1296,6 +1512,24 @@
 				},
 				"description":	"16-24 GHz Driver Amplifier",
 				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"da"
+								},
+								"index":	4
+							},
+							"field":	{
+								"name":	"da"
+							}
+						},
+						"ref":	"U6",
+						"fileinfo":	{
+							"filename":	"src/components/CMD291P4.stanza",
+							"line":	61,
+							"column":	2
+						}
+					}, {
 						"inst":	{
 							"ref":	{
 								"ref":	{
@@ -1629,10 +1863,10 @@
 			"value":	18
 		}, {
 			"name":	"Components",
-			"value":	66
+			"value":	79
 		}, {
 			"name":	"Cost",
-			"value":	"$1.36"
+			"value":	"$1.40"
 		}],
 	"is_update":	false,
 	"old_bom":	{
@@ -1704,7 +1938,7 @@
 				"mpn":	"CL05A226MQ5QUNC",
 				"vendor":	"Arrow",
 				"sku":	"CL05A226MQ5QUNC",
-				"price":	0.1344,
+				"price":	0.1179,
 				"preferred":	false,
 				"query_properties":	{
 					"min-rated-voltage":	1.0197,
@@ -2415,7 +2649,7 @@
 				"mpn":	"CL05A106MQ5NUNC",
 				"vendor":	"Arrow",
 				"sku":	"CL05A106MQ5NUNC",
-				"price":	0.027,
+				"price":	0.0348,
 				"preferred":	false,
 				"query_properties":	{
 					"min-rated-voltage":	1.53,
